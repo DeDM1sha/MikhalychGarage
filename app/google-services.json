@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "227174982974",
+    "firebase_url": "https://inventory-garage-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "inventory-garage",
+    "storage_bucket": "inventory-garage.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:227174982974:android:f8746b5a37bb75442fb86f",
+        "android_client_info": {
+          "package_name": "com.example.admin.augscan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "227174982974-dhecj9nbkt6fsoneaedekfp62r3bdo20.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMLCDFvgWPNye33uk72yF70K1egM6ZVcc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "227174982974-dhecj9nbkt6fsoneaedekfp62r3bdo20.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

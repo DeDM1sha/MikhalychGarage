@@ -1,2 +1,0 @@
-# MikhalychGarage
-mikhalychgarage
