@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    tools:context="com.example.mikhalychgarage.RegisterActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="20dp"
+
+        android:fontFamily="@font/allura"
+        android:text="New detail 🚗"
+        android:textColor="#F44336"
+        android:textSize="65dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="215dp"
+        android:text="Название: "
+        android:textColor="#FF9800"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="224dp" />
+
+
+    <EditText
+        android:id="@+id/edititemname"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="-62dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColor="#ffff"
+        android:textColorHint="#ffff" />
+
+    <EditText
+        android:id="@+id/editcategory"
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edititemname"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="-74dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Выбрать..."
+        android:inputType="textPersonName"
+        android:textColor="#ffff"
+        android:textColorHint="#ffff"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="211dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="220dp"
+        android:layout_height="38dp"
+        android:layout_alignBottom="@+id/edititemname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-70dp"
+
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="7dp"
+
+        android:layout_marginBottom="-65dp"
+        android:text="Марка:  "
+        android:textColor="#FF9800"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="287dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="7dp"
+
+        android:layout_marginBottom="-60dp"
+        android:text="Цена: "
+        android:textColor="#FF9800"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="287dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="7dp"
+
+        android:layout_marginBottom="-56dp"
+        android:text="Штрих-код: "
+        android:textColor="#FF9800"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="287dp" />
+
+    <EditText
+        android:id="@+id/editprice"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editcategory"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="-57dp"
+        android:ems="10"
+        android:hint="₽500"
+        android:inputType="number"
+        android:textColor="#ffff"
+        android:textColorHint="#ffff" />
+
+    <EditText
+        android:id="@+id/barcodeview"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editprice"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="-58dp"
+        android:ems="10"
+        android:hint="Bar/QR Code Number"
+        android:inputType="textPersonName"
+        android:textColor="#ffff"
+        android:textColorHint="#ffff" />
+
+    <Button
+        android:id="@+id/buttonscan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/barcodeview"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="-106dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Скан Bar/QR Code"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="211dp" />
+
+    <Button
+        android:id="@+id/additembuttontodatabase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonscan"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="-85dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Добавить запчасть"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="211dp" />
+
+
+</RelativeLayout>
