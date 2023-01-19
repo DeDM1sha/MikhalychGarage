@@ -1,5 +1,5 @@
 color A
 git add -A
-git commit -m "rebuild additem (activity)"
+git commit -m "fix orientation"
 git push -u origin master
 del /q gitpush.bat && exit

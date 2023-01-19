@@ -23,14 +23,14 @@
         android:layout_height="wrap_content"
         android:textColor="#ffff"
         android:textStyle="bold"
-        android:text="Item Barcode" />
+        android:text="Штрих-код 🏼:" />
 
 
     <TextView
         android:id="@+id/viewitembarcode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="53dp"
+        android:layout_marginStart="50dp"
         android:textColor="#ffff"
         android:layout_marginLeft="50dp"
         android:layout_toEndOf="@+id/viewitembarcodename"
@@ -43,14 +43,14 @@
         android:layout_height="wrap_content"
         android:textColor="#ffff"
         android:textStyle="bold"
-        android:text="Item Name" />
+        android:text="Название 🛠️: " />
 
 
     <TextView
         android:id="@+id/viewitemname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="67dp"
+        android:layout_marginStart="55dp"
         android:layout_marginLeft="50dp"
         android:textColor="#ffff"
         android:layout_marginTop="20dp"
@@ -64,13 +64,13 @@
         android:layout_height="wrap_content"
         android:textColor="#ffff"
         android:textStyle="bold"
-        android:text="Item Price $" />
+        android:text="Стоимость ₽:" />
 
     <TextView
         android:id="@+id/viewitemprice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="62dp"
+        android:layout_marginStart="57dp"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="40dp"
         android:textColor="#ffff"
@@ -84,13 +84,13 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textColor="#ffff"
-        android:text="Item Category" />
+        android:text="Марка авто 🚗:" />
 
     <TextView
         android:id="@+id/viewitemcategory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="47dp"
+        android:layout_marginStart="45dp"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="60dp"
         android:textColor="#ffff"

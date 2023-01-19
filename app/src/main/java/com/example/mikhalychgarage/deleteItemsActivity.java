@@ -1,6 +1,7 @@
 package com.example.mikhalychgarage;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -25,7 +26,7 @@ public class deleteItemsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_delete_items);
         firebaseAuth = FirebaseAuth.getInstance();
-
+        setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         databaseReference = FirebaseDatabase.getInstance().getReference("Users");
         resultdeleteview = findViewById(R.id.barcodedelete);
         scantodelete = findViewById(R.id.buttonscandelete);

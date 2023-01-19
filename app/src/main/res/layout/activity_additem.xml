@@ -48,14 +48,14 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textView"
         android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="47dp"
         android:layout_marginBottom="-62dp"
         android:ems="10"
         android:hint="Name"
         android:inputType="textPersonName"
         android:textColor="#ffff"
-        android:textColorHint="#ffff"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="211dp" />
+        android:textColorHint="#ffff" />
 
     <EditText
         android:id="@+id/editcategory"
@@ -63,6 +63,8 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/edititemname"
         android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
         android:layout_marginBottom="-74dp"
         android:ems="10"
         android:enabled="false"
@@ -79,7 +81,7 @@
         android:layout_height="38dp"
         android:layout_alignBottom="@+id/edititemname"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="-68dp"
+        android:layout_marginBottom="-70dp"
 
         />
 
@@ -91,7 +93,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginStart="7dp"
 
-        android:layout_marginBottom="-76dp"
+        android:layout_marginBottom="-65dp"
         android:text="Марка:  "
         android:textColor="#FF9800"
         android:textSize="20dp"
@@ -138,14 +140,14 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/editcategory"
         android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="55dp"
         android:layout_marginBottom="-57dp"
         android:ems="10"
         android:hint="₽500"
         android:inputType="number"
         android:textColor="#ffff"
-        android:textColorHint="#ffff"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="211dp" />
+        android:textColorHint="#ffff" />
 
     <EditText
         android:id="@+id/barcodeview"
@@ -153,15 +155,13 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/editprice"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="98dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginBottom="-58dp"
         android:ems="10"
         android:hint="Bar/QR Code Number"
         android:inputType="textPersonName"
         android:textColor="#ffff"
-        android:textColorHint="#ffff"
-        tools:layout_editor_absoluteX="110dp"
-        tools:layout_editor_absoluteY="211dp" />
+        android:textColorHint="#ffff" />
 
     <Button
         android:id="@+id/buttonscan"
