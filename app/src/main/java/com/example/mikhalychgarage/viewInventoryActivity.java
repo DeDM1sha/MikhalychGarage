@@ -1,5 +1,6 @@
 package com.example.mikhalychgarage;
 
+import android.content.pm.ActivityInfo;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -29,6 +30,7 @@ public class viewInventoryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_inventory);
+        setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         totalnoofitem= findViewById(R.id.totalnoitem);
         totalnoofsum = findViewById(R.id.totalsum);
         firebaseAuth = FirebaseAuth.getInstance();

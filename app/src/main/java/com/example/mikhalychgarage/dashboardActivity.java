@@ -1,6 +1,7 @@
 package com.example.mikhalychgarage;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
@@ -28,6 +29,7 @@ public class dashboardActivity extends AppCompatActivity implements View.OnClick
         setContentView(R.layout.activity_dashboard);
         firebasenameview = findViewById(R.id.firebasename);
 
+        setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         // this is for username to appear after login
 
         firebaseAuth = FirebaseAuth.getInstance();

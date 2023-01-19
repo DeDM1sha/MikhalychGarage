@@ -29,8 +29,8 @@
             android:fontFamily="@font/allura"
             android:text="Welcome,"
             android:textStyle="bold"
-            android:textColor="#F57C00"
-            android:textSize="40sp" />
+            android:textColor="#F44336"
+            android:textSize="35sp" />
 
 
 
@@ -82,7 +82,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
-                        android:text="Add Product"
+                        android:text="Добавление"
                         android:textSize="17dp"/>
 
 
@@ -123,7 +123,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
-                        android:text="Delete Product"
+                        android:text="   Удаление"
                         android:textSize="17dp"
                         />
 
@@ -160,14 +160,16 @@
                         android:layout_width="85dp"
                         android:layout_height="85dp"
                         android:background="@drawable/circlebackgroundpink"
-                        android:src="@drawable/ic_find_replace_black_24dp"/>
+                        android:src="@drawable/ic_find_replace_black_24dp"
+                        />
 
                     <TextView
                         android:layout_marginTop="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
-                        android:text="View Product"
+                        android:gravity="center"
+                        android:text="    Поиск"
                         android:textSize="17dp"/>
 
 
@@ -208,7 +210,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
-                        android:text="View Inventory"
+                        android:text="Просмотр"
                         android:textSize="17dp"/>
 
 

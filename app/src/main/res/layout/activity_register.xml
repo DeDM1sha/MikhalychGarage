@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="236dp"
-        android:layout_height="190dp"
+        android:layout_width="220dp"
+        android:layout_height="180dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="22dp"
@@ -26,9 +26,10 @@
         android:layout_marginTop="50dp"
         android:layout_marginBottom="-90dp"
         android:fontFamily="@font/allura"
-        android:text="augScan"
-        android:textColor="#C1F8B0B0"
-        android:textSize="55dp"
+        android:text="Mikhalych Garage"
+        android:gravity="center"
+        android:textColor="#F44336"
+        android:textSize="50dp"
         android:textStyle="bold" />
 
     <EditText
