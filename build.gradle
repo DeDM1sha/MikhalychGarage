@@ -20,9 +20,14 @@ buildscript {
 }
 
 allprojects {
+
     repositories {
         google()
         jcenter()
+        tasks.withType(JavaCompile) {
+            it.options.compilerArgs << "-Xlint:none" << "-nowarn"
+        }
+
         
     }
 }

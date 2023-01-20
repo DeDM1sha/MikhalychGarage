@@ -36,13 +36,13 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-        Email = (EditText) findViewById(R.id.emailSignIn);
-        Password = (EditText) findViewById(R.id.password);
-        Login = (Button) findViewById(R.id.Login);
+        Email = findViewById(R.id.emailSignIn);
+        Password =  findViewById(R.id.password);
+        Login = findViewById(R.id.Login);
 
         passwordreset = findViewById(R.id.forgotpassword);
         passwordresetemail = findViewById(R.id.emailSignIn);
-        progressBar = (ProgressBar) findViewById(R.id.progressbars);
+        progressBar = findViewById(R.id.progressbars);
         progressBar.setVisibility(View.GONE);
         auth = FirebaseAuth.getInstance();
         processDialog = new ProgressDialog(this);
