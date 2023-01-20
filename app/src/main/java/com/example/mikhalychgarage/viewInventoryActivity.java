@@ -8,7 +8,6 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.TextView;
 
-import com.example.mikhalychgarage.R;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -21,11 +20,11 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.Map;
 
 public class viewInventoryActivity extends AppCompatActivity {
-    private FirebaseAuth firebaseAuth;
+
     RecyclerView mrecyclerview;
     DatabaseReference mdatabaseReference;
-   private TextView totalnoofitem, totalnoofsum;
-   private int counttotalnoofitem =0;
+    private TextView totalnoofitem, totalnoofsum;
+    private int counttotalnoofitem =0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,11 +32,22 @@ public class viewInventoryActivity extends AppCompatActivity {
         setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         totalnoofitem= findViewById(R.id.totalnoitem);
         totalnoofsum = findViewById(R.id.totalsum);
+
+
+        FirebaseAuth firebaseAuth;
         firebaseAuth = FirebaseAuth.getInstance();
         final FirebaseUser users = firebaseAuth.getCurrentUser();
-        String finaluser=users.getEmail();
-        String resultemail = finaluser.replace(".","");
-        mdatabaseReference = FirebaseDatabase.getInstance().getReference("Users").child(resultemail).child("Items");
+        String finaluser= null;
+        if (users != null) {
+            finaluser = users.getEmail();
+        }
+        String resultemail = null;
+        if (finaluser != null) {
+            resultemail = finaluser.replace(".","");
+        }
+        if (resultemail != null) {
+            mdatabaseReference = FirebaseDatabase.getInstance().getReference("Users").child(resultemail).child("Items");
+        }
         mrecyclerview = findViewById(R.id.recyclerViews);
         LinearLayoutManager manager = new LinearLayoutManager(this);
         mrecyclerview.setLayoutManager(manager);
@@ -69,7 +79,11 @@ public class viewInventoryActivity extends AppCompatActivity {
             int sum=0;
             for(DataSnapshot ds : dataSnapshot.getChildren()){
                 Map<String,Object> map = (Map<String, Object>) ds.getValue();
-                Object price = map.get("itemprice");
+                
+                Object price = null;
+                if (map != null) {
+                    price = map.get("itemprice");
+                }
                 int pValue = Integer.parseInt(String.valueOf(price));
                 sum += pValue;
                 totalnoofsum.setText(String.valueOf(sum));
@@ -98,31 +112,12 @@ public class viewInventoryActivity extends AppCompatActivity {
             @Override
             protected void populateViewHolder(scanItemsActivity.UsersViewHolder viewHolder, Items model, int position){
 
-                viewHolder.setDetails(getApplicationContext(),model.getItembarcode(),model.getItemcategory(),model.getItemname(),model.getItemprice());
+                viewHolder.setDetails(model.getItembarcode(),model.getItemcategory(),model.getItemname(),model.getItemprice());
             }
         };
 
         mrecyclerview.setAdapter(firebaseRecyclerAdapter);
     }
-//    public static class UsersViewHolder extends RecyclerView.ViewHolder{
-//        View mView;
-//        public UsersViewHolder(View itemView){
-//            super(itemView);
-//            mView =itemView;
-//        }
-//
-//        public void setDetails(Context ctx, String itembarcode, String itemcategory, String itemname, String itemprice){
-//            TextView item_barcode = (TextView) mView.findViewById(R.id.viewitembarcode);
-//            TextView item_name = (TextView) mView.findViewById(R.id.viewitemname);
-//            TextView item_category = (TextView) mView.findViewById(R.id.viewitemcategory);
-//            TextView item_price = (TextView) mView.findViewById(R.id.viewitemprice);
-//
-//            item_barcode.setText(itembarcode);
-//            item_category.setText(itemcategory);
-//            item_name.setText(itemname);
-//            item_price.setText(itemprice);
-//        }
-//
-//    }
+
 
 }

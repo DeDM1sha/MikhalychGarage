@@ -38,7 +38,7 @@
 
     <TextView
         android:id="@+id/viewitemnamename"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#ffff"
@@ -53,13 +53,14 @@
         android:layout_marginStart="55dp"
         android:layout_marginLeft="50dp"
         android:textColor="#ffff"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
+        android:textSize="10sp"
         android:layout_toEndOf="@+id/viewitemnamename"
         android:text="TextView" />
 
     <TextView
         android:id="@+id/viewitempricename"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#ffff"
@@ -72,14 +73,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="57dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
         android:textColor="#ffff"
         android:layout_toEndOf="@+id/viewitempricename"
         android:text="TextView" />
 
     <TextView
         android:id="@+id/viewitemcategoryname"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="70dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
@@ -92,7 +93,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="70dp"
         android:textColor="#ffff"
         android:layout_toEndOf="@+id/viewitemcategoryname"
         android:text="TextView" />
