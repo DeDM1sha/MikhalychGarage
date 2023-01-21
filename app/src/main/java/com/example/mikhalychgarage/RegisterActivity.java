@@ -12,7 +12,6 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.example.mikhalychgarage.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -65,23 +64,6 @@ public class RegisterActivity extends AppCompatActivity {
             //handle the already login user
         }
     }
-//    public void addStudent(){
-//        String studentNameValue = editTextName.getText().toString();
-//        String mcneeseIdValue = editTextEmail.getText().toString();
-//        if(!TextUtils.isEmpty(studentNameValue)&&!TextUtils.isEmpty(mcneeseIdValue)){
-//            String id = FirebaseDatabase.getInstance().getReference("Users").push().getKey();
-//            User students = new User(studentNameValue,mcneeseIdValue);
-//            // databaseReference.child(bttnName.getText().toString()).push().setValue(students);
-//            FirebaseDatabase.getInstance().getReference("Users").setValue(students);
-//            editTextName.setText("");
-//            editTextEmail.setText("");
-//            Toast.makeText(RegisterActivity.this,"Student Details Added",Toast.LENGTH_SHORT).show();
-//        }
-//        else{
-//            Toast.makeText(RegisterActivity.this,"Please Fill Fields",Toast.LENGTH_SHORT).show();
-//        }
-//    }
-
 
     private void registerUser() {
         final String name = editTextName.getText().toString().trim();
