@@ -30,7 +30,7 @@
             android:text="Welcome,"
             android:textStyle="bold"
             android:textColor="#FFFFFF"
-            android:textSize="35sp" />
+            android:textSize="30sp" />
 
 
 
@@ -78,12 +78,12 @@
                         android:src="@drawable/ic_add_black_add" />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="96dp"
 
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:text="Добавление"
-                        android:textSize="17dp"
+                        android:textSize="15dp"
                         android:textStyle="bold" />
 
 

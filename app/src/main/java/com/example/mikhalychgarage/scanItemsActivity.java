@@ -126,7 +126,7 @@ public class scanItemsActivity extends AppCompatActivity {
 
                 viewHolder.setDetails(model.getItembarcode(),model.getItemcategory(),model.getItemname(),model.getItemprice());
             }
-        };
+        }; // метод поиска запчастей
 
         mrecyclerview.setAdapter(firebaseRecyclerAdapter);
     }
